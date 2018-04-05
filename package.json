@@ -1,0 +1,12 @@
+{
+  "name": "cultuurgif",
+  "version": "1.0.0",
+  "description": "Website for cultuur.gif",
+  "main": "index.js",
+  "repository": "https://github.com/cultuur-gif/cultuurgif.git",
+  "author": "Erik van Zummeren",
+  "license": "MIT",
+  "dependencies": {
+    "blendid": "^4.4.3"
+  }
+}
