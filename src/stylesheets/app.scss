@@ -1,6 +1,9 @@
 @import "base/typography";
 @import "base/reset";
 
+@import url("https://use.typekit.net/czs6kfx.css");
+
+
 body {
 	margin: 0;
 }
@@ -17,6 +20,8 @@ header {
 }
 
 h1 {
+  font-family: "adobe-caslon-pro", serif;
+  color: white;
 	position: absolute;
 	top: 30%;
 }

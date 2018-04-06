@@ -10,13 +10,13 @@ export default function () {
 
 	//load an image and run the `setup` function when it's done
 	PIXI.loader
-  	.add("../images/header.jpg")
+  	.add("./images/header.jpg")
   	.load(setup);
 
 	//This `setup` function will run when the image has loaded
 	function setup() {
 
-  let bg = new PIXI.Sprite(PIXI.loader.resources["../images/header.jpg"].texture);
+  let bg = new PIXI.Sprite(PIXI.loader.resources["./images/header.jpg"].texture);
 
   // bg.width = app.screen.width;
   // bg.height = app.screen.height;
