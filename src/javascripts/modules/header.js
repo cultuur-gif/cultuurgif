@@ -34,14 +34,22 @@ export default function () {
 
 	let handleMousemove = (event) => {
 		console.log(event.x/3)
-		glitchFilter.slices = Math.round(event.x/10);
+		glitchFilter.slices = Math.round(event.x/20);
 		glitchFilter.refresh();
 
   	console.log(`mouse position: ${event.x}:${event.y}`);
 	};
 
-
 document.addEventListener('mousemove', handleMousemove);
+
+setInterval(function(){ 
+// glitchFilter.samplesize = 300;
+// glitchFilter.direction = 60;
+glitchFilter.red = [Math.round(Math.random()*30),Math.round(Math.random()*30)];
+glitchFilter.blue = [Math.round(Math.random()*30),Math.round(Math.random()*30)];
+
+}, 1000);
+
 
 	/* Animatie */
 	var count = 0;
@@ -49,12 +57,12 @@ document.addEventListener('mousemove', handleMousemove);
 	app.ticker.add(function() {
 	    count = 0.10;
 	    filmFilter.seed = (Math.random() +.3) * (count);
-	    glitchFilter.seed = Math.random();
+	    // glitchFilter.seed = Math.random();
 
 	    // console.log(glitchFilter.seed);
 	    // glitchFilter.seed = Math.random();
 	    // glitchFilter.shuffle();
-	    glitchFilter.redraw();
+	    // glitchFilter.redraw();
 
 	    // console.log(filmFilter.seed);
 	});

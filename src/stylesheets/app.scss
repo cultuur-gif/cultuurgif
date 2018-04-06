@@ -3,6 +3,7 @@
 
 @import url("https://use.typekit.net/czs6kfx.css");
 
+$margin-left: 30px;
 
 body {
 	margin: 0;
@@ -15,15 +16,18 @@ header {
 .logo {
 	position: absolute;
 	width: 100px;
-	top: 30px;
-	left: 30px;
+	top: $margin-left;
+	left: $margin-left;
 }
 
 h1 {
-  font-family: "adobe-caslon-pro", serif;
+  font-family: "source-code-pro", mono;
+  font-weight: 300;
   color: white;
 	position: absolute;
+	width: 50%;
 	top: 30%;
+	left: $margin-left;
 }
 
 canvas {
