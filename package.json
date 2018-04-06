@@ -7,6 +7,9 @@
   "author": "Erik van Zummeren",
   "license": "MIT",
   "dependencies": {
-    "blendid": "^4.4.3"
+    "@pixi/filter-glitch": "^2.6.0",
+    "@pixi/filter-old-film": "^2.6.0",
+    "blendid": "^4.4.3",
+    "pixi.js": "^4.7.3"
   }
 }
