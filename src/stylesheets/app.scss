@@ -23,11 +23,18 @@ header {
 h1 {
   font-family: "source-code-pro", mono;
   font-weight: 300;
+  font-size: 34px;
+  line-height: 32px;
   color: white;
 	position: absolute;
 	width: 50%;
 	top: 30%;
 	left: $margin-left;
+}
+
+h1 span { 
+	font-weight: 400;
+	line-height: 44px;
 }
 
 canvas {

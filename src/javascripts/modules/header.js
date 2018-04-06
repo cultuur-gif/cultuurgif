@@ -43,13 +43,18 @@ export default function () {
 document.addEventListener('mousemove', handleMousemove);
 
 setInterval(function(){ 
-// glitchFilter.samplesize = 300;
-// glitchFilter.direction = 60;
+glitchFilter.direction = 60;
 glitchFilter.red = [Math.round(Math.random()*30),Math.round(Math.random()*30)];
-glitchFilter.blue = [Math.round(Math.random()*30),Math.round(Math.random()*30)];
+glitchFilter.green = [Math.round(Math.random()*20),Math.round(Math.random()*20)];
 
 }, 1000);
 
+setInterval(function(){ 
+// glitchFilter.direction = 60;
+glitchFilter.red = [Math.round(Math.random()*30),Math.round(Math.random()*30)];
+glitchFilter.green = [Math.round(Math.random()*20),Math.round(Math.random()*20)];
+
+}, 2500);
 
 	/* Animatie */
 	var count = 0;
