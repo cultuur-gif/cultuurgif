@@ -1,0 +1,49 @@
+.scroll {
+  height: 20%;
+  font-size: 120px;
+  line-height: 20vh;
+  white-space: nowrap;
+	color: blue;
+  margin-top: -75px;
+  font-family: "source-code-pro", mono;
+  font-weight: 600;
+}
+
+.segment {
+  display: inline-block;
+  padding-left: 3%;
+  animation: scroll 10s infinite linear;
+}
+
+@-moz-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@-o-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

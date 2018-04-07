@@ -20,6 +20,8 @@ export default function () {
 
   // bg.width = app.screen.width;
   // bg.height = app.screen.height;
+  bg.x = app.screen.width/10;
+  bg.y = app.screen.height/10;
 
   var filmFilter = new OldFilmFilter({
   	"sepia": 0,
@@ -30,30 +32,25 @@ export default function () {
   	"offset": 5
   });
   // filmFilter.scratch = 0;
+	glitchFilter.direction = 60;
 	bg.filters = [filmFilter, glitchFilter];
 
 	let handleMousemove = (event) => {
-		console.log(event.x/3)
 		glitchFilter.slices = Math.round(event.x/20);
 		glitchFilter.refresh();
-
-  	console.log(`mouse position: ${event.x}:${event.y}`);
+  	// console.log(`mouse position: ${event.x}:${event.y}`);
 	};
 
 document.addEventListener('mousemove', handleMousemove);
 
 setInterval(function(){ 
-glitchFilter.direction = 60;
-glitchFilter.red = [Math.round(Math.random()*30),Math.round(Math.random()*30)];
-glitchFilter.green = [Math.round(Math.random()*20),Math.round(Math.random()*20)];
-
+	glitchFilter.red = [Math.round(Math.random()*30),Math.round(Math.random()*30)];
+	glitchFilter.green = [Math.round(Math.random()*20),Math.round(Math.random()*20)];
 }, 1000);
 
 setInterval(function(){ 
-// glitchFilter.direction = 60;
-glitchFilter.red = [Math.round(Math.random()*30),Math.round(Math.random()*30)];
-glitchFilter.green = [Math.round(Math.random()*20),Math.round(Math.random()*20)];
-
+	glitchFilter.red = [Math.round(Math.random()*30),Math.round(Math.random()*30)];
+	glitchFilter.green = [Math.round(Math.random()*20),Math.round(Math.random()*20)];
 }, 2500);
 
 	/* Animatie */
