@@ -3,9 +3,12 @@
   "fonts/didot-webfont.svg": "fonts/didot-webfont-857943d718.svg",
   "fonts/didot-webfont.ttf": "fonts/didot-webfont-1539ca20f5.ttf",
   "fonts/didot-webfont.woff": "fonts/didot-webfont-a2131680df.woff",
+  "images/gif1.gif": "images/gif1-80ba1445ad.gif",
+  "images/gif2.gif": "images/gif2-632f26dac4.gif",
+  "images/gif3.gif": "images/gif3-3571ede2a8.gif",
   "images/header.jpg": "images/header-ef1af9d9e8.jpg",
   "images/logo.svg": "images/logo-26a7dbf3a5.svg",
   "images/vanitas.jpg": "images/vanitas-fbd75d0b62.jpg",
-  "javascripts/app.js": "javascripts/app-8c737b755b492f49cf43.js",
-  "stylesheets/app.css": "stylesheets/app-07ed45780c.css"
+  "javascripts/app.js": "javascripts/app-9ecae21ca65e131ead19.js",
+  "stylesheets/app.css": "stylesheets/app-c853c79fe1.css"
 }

@@ -1,17 +1,54 @@
+.casestudies--hide {
+	opacity: 0;
+	-webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+}
+
 .scroll {
   height: 20%;
   font-size: 120px;
-  line-height: 20vh;
+  /*line-height: 20vh;*/
   white-space: nowrap;
 	color: blue;
-  margin-top: -75px;
   font-family: "source-code-pro", mono;
   font-weight: 600;
 }
 
+.small {
+	font-size: 40px;
+	text-decoration-line: underline !important;
+	background: blue;
+	color: white;
+	z-index: 1000;
+}
+
+.small:hover > .small {
+	background: black;
+	color: white;
+	cursor: pointer;
+}
+
+.small:hover > .filter {
+	position: fixed;
+	display: block;
+}
+
+.filler {
+	width: 100%;
+	height: 100vh;
+	background: black;
+	position: fixed;
+	display: none;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+
 .segment {
   display: inline-block;
-  padding-left: 3%;
+  padding-left: 2%;
   animation: scroll 10s infinite linear;
 }
 

@@ -1,17 +1,27 @@
-// import './modules';
-// import {OldFilmFilter} from '@pixi/filter-old-film';
-// import {Container} from 'pixi.js';
 import Header from './modules/header';
 import Anim from './modules/anim';
+import Loader from './modules/loader';
 
+Loader();
 Header();
 Anim();
-// const container = new Container();
-// container.filters = [new OldFilmFilter()];
+
+let fillerDisplay = document.getElementsByClassName("filler")[0],
+		hdat = document.getElementsByClassName("menu")[0];
+
+function showFiller (showType){
+	fillerDisplay.style.display = showType;
+}
+
+function hideCaseStudies (){
+	document.getElementsByClassName("scroll")[0].className += " casestudies--hide";
+}
+
+// Kleine animatie voor hovers
+hdat.addEventListener('mouseover', function(){showFiller('block')});
+hdat.addEventListener('mouseout', function(){showFiller('none')});
+hdat.addEventListener('click', hideCaseStudies);
 
 
 
 
-
-
-// console.log(`app.js has loaded!`)
